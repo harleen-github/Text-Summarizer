@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <link 
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/static/styles.css"/>
+</head>
+<body>
+    <div class="container">
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h1 class="display-4 heading">Text Summarization</h1>
+                <p class="lead">Retrieve the best summary of the text</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" style="display:flex; justify-content:space-around">
+        <p class="original_title col-sm-6">Original text</p>
+        <p class="summary_title col-sm-6">Summary</p>
+    </div>
+
+    <div class="container srt">
+        <div class="originalTxt col-sm-6">
+            <p>{{orgtext}}</p>
+        </div>
+        <div class="summaryTxt col-sm-6">
+            <p>{{summary}}</p>
+        </div>
+    </div>
+    <div class="container">
+        <button class="btn btn-danger" type="submit">words:{{lenorg}}</button>
+        <button class="btn btn-success" type="submit">words:{{lensum}}</button>
+    </div>
+    <script 
+    src="https://code.jquery.com/jquery-3.2.1.slim.min.js" 
+    integrity="sha384-KJ3o2DKtIKvYIK3UENzmM7KCkR/rE9/Qpg6aAZGJwFDMNAN/GpGFF93hXpG5KkN" 
+    crossorigin="anonymous"></script>
+     
+    <script 
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" 
+    integrity="sha384-ApNbgh9B+Y1QKtv3mr8Qw3pNhHUK/ScQsAP7huibX39j7fakFpskyxu5r0ab24Q" 
+    crossorigin="anonymous"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" 
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGI8RRSQQxFsFWipi1MquVdAyjuar5+r76PvCmlY" 
+    crossorigin="anonymous"></script>
+</body>
+</html>
