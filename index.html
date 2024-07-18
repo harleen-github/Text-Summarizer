@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <link 
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/static/styles.css"/>
+</head>
+<body>
+    <div class="container">
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h1 class="display-4 heading">Text Summarization</h1>
+                <p class="lead">Retrieve the best summary of the text</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <form action="/analyze" method="POST">
+            <textarea name="rawtext" class="form-control" rows="3" placeholder="Enter your raw text"></textarea>
+            <button class="btn btn-primary" type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script 
+    src="https://code.jquery.com/jquery-3.2.1.slim.min.js" 
+    integrity="sha384-KJ3o2DKtIKvYIK3UENzmM7KCkR/rE9/Qpg6aAZGJwFDMNAN/GpGFF93hXpG5KkN" 
+    crossorigin="anonymous"></script>
+     
+    <script 
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" 
+    integrity="sha384-ApNbgh9B+Y1QKtv3mr8Qw3pNhHUK/ScQsAP7huibX39j7fakFpskyxu5r0ab24Q" 
+    crossorigin="anonymous"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" 
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGI8RRSQQxFsFWipi1MquVdAyjuar5+r76PvCmlY" 
+    crossorigin="anonymous"></script>
+</body>
+</html>
